@@ -143,3 +143,8 @@ svg {
 .full-height {
     height: 100%;
 }
+
+.random-lines {
+    height: 100%;
+    width: 100%;
+}
