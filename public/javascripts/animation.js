@@ -1,128 +1,142 @@
-/* Animations for Front Page */
-$(document).ready(function() {
-    // var letters = $("text");
-    /// var limits = $("rect").position(); unecessary, just gotta be 500 pixels of offset
-    for (count = 0; count < 4; count++) {
-        var new_element = gen_rect_element(gen_rect());
-        console.log(new_element);
-        $("svg").append(gen_rect_element(gen_rect()));
-    }
+/*****************
+                                                                                                                                                                                                                                     Summary
+                                                                                                                                                                                                                                *****************/
+/* Watch the codecast to learn how this demo was made: https://www.youtube.com/watch?v=MDLiVB6g2NY&hd=1 */
 
-    $("line").each(function() {
-        $(this).css("opacity", 0);
-    });
-    $("text").each(function(index) {
-        if ($(this).attr("id") === "fixed") {
-            return true;
-        } else {
-            let origin_pos = gen_pos();
-            let end_pos = gen_pos();
-            $(this).attr("x", origin_pos[0]).attr("y", origin_pos[1]).css("opacity", 0);
-            $(this).animate({
-                y: end_pos[1]
+/* This demo serves two purposes:
+1) Act as Velocity's primary visual test (in addition to the unit and load tests).
+2) Demonstrate all of Velocity's features.
+3) Demonstrate the performance capabilties of the DOM; WebGL and Canvas are not used in this demo.
+*/
 
-            }, {
-                duration: gen_duration(),
-                step: function(now, then) {
-                    $(this).attr("y", now);
-                }
-            }, function() {
-                $(this).animate({
-                    y: end_pos[1]
+/* Intended demo behavior: 
+1) A message box fades out.
+2) Dots are randomly assigned coordinates and opacities then translated and increased in opacity. This animation is then reversed.
+3) Meanwhile, the dots' container has its perspective, rotateZ, and opacity animated in a loop with a delay.
+4) Once the dot animation is complete, the message box fades back in.
+*/
 
-                }, {
-                    duration: gen_duration(),
-                    step: function(now, then) {
-                        $(this).attr("y", now);
-                    }
-                });
-            });
-        }
-    });
-    $("#fixed").animate({
-            opacity: 1
-        },
-        6000);
-    $("line").animate({
-        opacity: 1
-    }, 6000);
-    //Fade in the lines
+/*********************
+ Device Detection
+*********************/
 
-    $("svg").click(function() {
-        animateLetters();
+var isWebkit = /Webkit/i.test(navigator.userAgent),
+    isChrome = /Chrome/i.test(navigator.userAgent),
+    isMobile = !!("ontouchstart" in window),
+    isAndroid = /Android/i.test(navigator.userAgent),
+    isIE = document.documentMode;
+
+/******************
+    Redirection
+******************/
+
+if (isMobile && isAndroid && !isChrome) {
+    alert("Although Velocity.js works on all mobile browsers, this 3D demo is for iOS devices or Android devices running Chrome only. Redirecting you to Velocity's documentation.");
+    window.location = "index.html";
+}
+
+/***************
+    Helpers
+***************/
+
+/* Randomly generate an integer between two numbers. */
+function r(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+/* Override the default easing type with something a bit more jazzy. */
+$.Velocity.defaults.easing = "easeInOutsine";
+
+/*******************
+    Dot Creation
+*******************/
+
+/* Differentiate dot counts based on roughly-guestimated device and browser capabilities. */
+var dotsCount = 25,
+    dotsHtml = "",
+    $count = $("#count"),
+    $dots;
+
+for (var i = 0; i < dotsCount; i++) {
+    dotsHtml += "<text class='dot'>b</text>";
+}
+
+$dots = $(dotsHtml);
+
+$count.html(dotsCount);
+
+/*************
+    Setup
+*************/
+
+var $container = $("#container"),
+    $browserWidthNotice = $("#browserWidthNotice"),
+    $welcome = $("#welcome");
+
+var screenWidth = 500,
+    screenHeight = 500,
+    chromeHeight = screenHeight;
+
+/* Ensure the user is full-screened; this demo's translations are relative to screen width, not window width. */
+if ((document.documentElement.clientWidth / screenWidth) < 0.80) {
+    $browserWidthNotice.show();
+}
+
+/*****************
+    Animation
+*****************/
+
+
+/* Special visual enhancement for WebKit browsers, which are faster at box-shadow manipulation. */
+if (isWebkit) {
+    $dots.css("color", "#000");
+}
+
+/* Animate the dots. */
+$dots
+    .velocity({
+        translateX: [
+            function() {
+                return "+=" + r(-screenWidth, screenWidth)
+            },
+            function() {
+                return r(0, screenWidth)
+            }
+        ],
+        translateY: [
+            function() {
+                return "+=" + r(-screenHeight, screenHeight / 2.75)
+            },
+            function() {
+                return r(0, screenHeight)
+            }
+        ]
+    }, {
+        duration: 4000,
+        complete: animate($dots)
     })
+    .appendTo($container);
 
-    animateLetters();
-});
-
-
-function gen_pos() {
-    var x_val = Math.floor(Math.random() * 440) + 30;
-    var y_val_1 = Math.floor(Math.random() * 265) + 250;
-    var y_val_2 = Math.floor(Math.random() * 180) + 50;
-    var y_val = Math.random() < 0.5 ? y_val_1 : y_val_2;
-    //return "translate(" + x_val + "px, " + y_val + "px)";
-    return [x_val, y_val];
-}
-
-function gen_duration() {
-    return Math.floor(Math.random() * 9000) + 7000;
-}
-
-function gen_point() {
-    return Math.floor(Math.random() * 440) + 30;
-}
-
-function gen_rect() {
-    return {
-        "x1": gen_point(),
-        "x2": gen_point(),
-        "y1": gen_point(),
-        "y2": gen_point()
-    }
-}
-
-function gen_rect_element(dimensions) {
-    var newLine = document.createElementNS('http://www.w3.org/2000/svg', 'line');
-    newLine.setAttribute('x1', dimensions.x1);
-    newLine.setAttribute('y1', dimensions.y1);
-    newLine.setAttribute('x2', dimensions.x2);
-    newLine.setAttribute('y2', dimensions.y2);
-    newLine.setAttribute('stroke', "#000000");
-    newLine.setAttribute('stroke-width', '1px');
-    return newLine;
-}
-
-function animateLetters() {
-    $("text").each(function(index) {
-        if ($(this).attr("id") === "fixed") {
-            return true;
-        } else {
-            let origin_pos = gen_pos();
-            let end_pos = gen_pos();
-            $(this).attr("x", origin_pos[0]).attr("y", origin_pos[1]).css("opacity", 0);
-            $(this).animate({
-                y: end_pos[1]
-
-            }, {
-                duration: gen_duration(),
-                step: function(now, then) {
-                    $(this).attr("y", now)
-                        .css("opacity", (now / end_pos[1]));
-                }
-            }, function() {
-                $(this).animate({
-                    y: end_pos[1]
-
-                }, {
-                    duration: gen_duration(),
-                    step: function(now, then) {
-                        $(this).attr("y", now)
-                            .css("opacity", (now / end_pos[1]));
-                    }
-                });
-            });
-        }
+function animate(elements) {
+    elements.velocity({
+        translateX: [
+            function() {
+                return "+=" + r(-screenWidth, screenWidth)
+            },
+            function() {
+                return r(0, screenWidth)
+            }
+        ],
+        translateY: [
+            function() {
+                return "+=" + r(-screenHeight, screenHeight / 2.75)
+            },
+            function() {
+                return r(0, screenHeight)
+            }
+        ]
+    }, {
+        duration: 4000,
+        complete: animate($dots)
     });
-    animateLetters();
 }
