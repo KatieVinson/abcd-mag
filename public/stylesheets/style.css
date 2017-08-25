@@ -1,36 +1,59 @@
-body {
-    padding: 50px;
-    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.promo-image {
+    width: 85%;
+    height: 85%;
 }
 
-a {
-    color: #00B7FF;
+.secondary-promo {
+    font-family: AGaramondPro-Regular, Adobe Garamond Pro;
+    font-size: 53.83px;
+    line-height: 48px;
+    width: 100%;
+    padding-top: 25px;
+    text-align: center;
+    color: black;
+    transition: all 2s ease;
+    opacity: 0;
 }
 
-.top-graphic-container {
+.full-height {
     height: 100%;
 }
 
 svg {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.site-title-container {
     height: 100%;
-    text-align: center;
-}
-
-.site-title {
-    font-family: AGaramondPro-Regular, Adobe Garamond Pro;
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    display: inline-block;
+    transform: translate(-50%, -50%);
+}
+
+.first-frame {
+    font-family: Garamond;
+    font-size: 24px;
     margin: 0 auto;
 }
+
+.lead-photo {
+    height: 600px;
+    width: 500px;
+    background: url("../images/chris+rabbit.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+#masthead {
+    position: absolute;
+    top: 50px;
+}
+
+.full-height {
+    height: 100%;
+}
+
+
+/*svg styling */
 
 .a,
 .b,
@@ -138,17 +161,4 @@ svg {
 
 .q {
     letter-spacing: 0.07em;
-}
-
-.full-height {
-    height: 100%;
-}
-
-.random-lines {
-    height: 100%;
-    width: 100%;
-}
-
-.dot {
-    font-size: 48px;
 }
