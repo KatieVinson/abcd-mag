@@ -1,46 +1,119 @@
+.container-fluid {
+    padding: 0;
+}
+
 .promo-image {
-    width: 85%;
     height: 85%;
+    width: 85%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .secondary-promo {
     font-family: AGaramondPro-Regular, Adobe Garamond Pro;
-    font-size: 53.83px;
-    line-height: 48px;
+    font-size: 28px;
+    line-height: 30px;
     width: 100%;
-    padding-top: 25px;
-    text-align: center;
+    text-align: right;
+    padding-right: 25px;
     color: black;
     transition: all 2s ease;
     opacity: 0;
+    position: fixed;
+    top: 0px;
+}
+
+.secondary-promo img {}
+
+.stories {
+    opacity: 0;
+}
+
+.vcenter {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.vbottom {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.story {
+    width: 100%;
+}
+
+.story-sub {
+    padding-top: 50px;
+    text-align: left;
+}
+
+.story-heading {
+    font-size: 56px;
+    line-height: 56px;
+}
+
+.story-byline {
+    font-size: 20px;
+    padding: 15px 0;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.story-subheading {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.story-container {
+    font-family: AGaramondPro-Regular, Adobe Garamond Pro;
+    width: 100%;
+    height: 100%;
+    padding-left: 25px;
+    padding-bottom: 25px;
 }
 
 .full-height {
     height: 100%;
 }
 
-svg {
+.align-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
     height: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.caption-container {
+    display: block;
+}
+
+.image-caption {
+    font-family: AGaramondPro-Regular, Adobe Garamond Pro;
+    font-size: 72px;
+    line-height: 74px;
+    display: block;
     width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
-.first-frame {
-    font-family: Garamond;
-    font-size: 24px;
-    margin: 0 auto;
-}
-
-.lead-photo {
-    height: 600px;
-    width: 500px;
-    background: url("../images/chris+rabbit.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: inline-block;
+.byline {
+    font-family: AGaramondPro-Regular, Adobe Garamond Pro;
+    width: 100%;
+    display: block;
+    font-size: 22px;
+    margin-top: 15px;
 }
 
 #masthead {
@@ -51,6 +124,8 @@ svg {
 .full-height {
     height: 100%;
 }
+
+.swiper-slide {}
 
 
 /*svg styling */

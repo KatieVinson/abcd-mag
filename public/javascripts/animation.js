@@ -1,12 +1,15 @@
 $(function() {
     var showPromo = false;
-    $(".promo-image").mouseover(function() {
-        if (!showPromo) {
-            showPromo = true;
-            $(this).fadeOut(1000);
-            $(".secondary-promo").animate({
-                opacity: 1,
+    if (!showPromo) {
+        showPromo = true;
+        $(".promo-image").fadeOut(2000);
+        $(".secondary-promo").animate({
+            opacity: 0.5,
+        }, 2000, function() {
+            $(".stories").animate({
+                opacity: 1
             }, 2000);
-        }
-    })
+        });
+
+    }
 });
