@@ -2,10 +2,10 @@
     font-family: 'Jaapokki';
     src: url('../fonts/Regular/jaapokki-regular.eot');
     /* IE9 Compat Modes */
-    src: url('../fonts/Regular/jaapokki-regular.eot') format('embedded-opentype'), /* IE6-IE8 */
+    src: url('../fonts/Regular/jaapokki-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('../fonts/Regular/jaapokki-regular.woff') format('woff'), /* Pretty Modern Browsers */
     url('../fonts/Regular/jaapokki-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('../fonts/Regular/jaapokki-regular.svg') format('svg');
+    url('../fonts/Regular/jaapokki-regular.svg#svgFontName') format('svg');
     /* Legacy iOS */
 }
 
