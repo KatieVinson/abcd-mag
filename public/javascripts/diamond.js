@@ -3,7 +3,7 @@ $(function() {
     if (!showPromo) {
         showPromo = true;
         $(".secondary-promo").animate({
-            opacity: 0.5,
+            opacity: 1,
         }, 2000)
     }
 });
