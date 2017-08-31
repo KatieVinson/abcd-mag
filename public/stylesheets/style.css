@@ -101,7 +101,7 @@
 .top-container {
     height: 100%;
     font-family: AGaramondPro-Regular, Adobe Garamond Pro;
-    background-image: url("../images/chrisback.jpg");
+    background-image: url("http://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-646270468086/chrisback.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
