@@ -1,3 +1,14 @@
+@font-face {
+    font-family: 'Jaapokki';
+    src: url('../fonts/Regular/jaapokki-regular.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/Regular/jaapokki-regular.eot') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/Regular/jaapokki-regular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/Regular/jaapokki-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/Regular/jaapokki-regular.svg') format('svg');
+    /* Legacy iOS */
+}
+
 .promo-image {
     height: 85%;
     width: 85%;
@@ -8,7 +19,7 @@
 }
 
 .secondary-promo {
-    font-family: AGaramondPro-Regular, Adobe Garamond Pro;
+    font-family: 'Georgia';
     font-size: 28px;
     line-height: 30px;
     width: 100%;
@@ -46,7 +57,7 @@
 }
 
 .story-sub {
-    padding-top: 50px;
+    padding-top: 100px;
     text-align: left;
     color: black;
 }
@@ -92,7 +103,7 @@
 }
 
 .story-container {
-    font-family: AGaramondPro-Regular, Adobe Garamond Pro;
+    font-family: 'Georgia', serif;
     width: 100%;
     height: 100%;
     padding-left: 25px;
@@ -102,7 +113,7 @@
 
 .top-container {
     height: 100%;
-    font-family: AGaramondPro-Regular, Adobe Garamond Pro;
+    font-family: 'Georgia', serif;
     background-image: url("http://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-646270468086/chrisback.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -139,7 +150,7 @@ p:first-child:first-letter {
 .article-container {}
 
 .headline {
-    font-family: AGaramondPro-Regular, Adobe Garamond Pro;
+    font-family: 'Georgia';
     font-size: 108px;
     line-height: 114px;
 }
@@ -184,7 +195,7 @@ p:first-child:first-letter {
 }
 
 .image-caption {
-    font-family: AGaramondPro-Regular, Adobe Garamond Pro;
+    font-family: 'Georgia';
     font-size: 72px;
     line-height: 74px;
     display: block;
@@ -192,7 +203,7 @@ p:first-child:first-letter {
 }
 
 .byline {
-    font-family: AGaramondPro-Regular, Adobe Garamond Pro;
+    font-family: 'Georgia';
     width: 100%;
     display: block;
     font-size: 22px;
@@ -306,7 +317,7 @@ p:first-child:first-letter {
 .d,
 .e {
     font-size: 53.83px;
-    font-family: Jaapokki-Regular, Jaapokki;
+    font-family: 'Jaapokki';
 }
 
 .a,
@@ -380,7 +391,7 @@ p:first-child:first-letter {
 
 .k,
 .p {
-    font-family: AGaramondPro-Regular, Adobe Garamond Pro;
+    font-family: 'Georgia';
 }
 
 .l {
