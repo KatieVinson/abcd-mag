@@ -20,6 +20,7 @@
     position: fixed;
     top: 0px;
     z-index: 1;
+    background-color: transparent;
 }
 
 .secondary-promo img {}
@@ -158,7 +159,7 @@ p:first-child:first-letter {
 }
 
 .body-text {
-    padding: 80px 25px;
+    padding: 80px 5px;
 }
 
 .align-center {
@@ -204,6 +205,10 @@ p:first-child:first-letter {
 
 .full-height {
     height: 100%;
+}
+
+.inline-photo {
+    padding: 0px 15px 45px 15px;
 }
 
 .swiper-slide {}
