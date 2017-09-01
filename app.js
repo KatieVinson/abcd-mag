@@ -7,7 +7,6 @@ var bodyParser = require('body-parser');
 var sassMiddleware = require('node-sass-middleware');
 
 var index = require('./routes/index');
-var diamond_story = require('./routes/diamond.js');
 var app = express();
 
 // view engine setup
@@ -33,6 +32,9 @@ app.use('/', index);
 app.use('/rabbit', function(req, res) {
     res.render('diamond');
 });
+app.use('/honor', function(req, res) {
+    res.render('honor');
+})
 app.use('/npm', express.static(path.join(__dirname, 'node_modules')));
 app.use('/images', express.static(path.join(__dirname, 'public/images')));
 // catch 404 and forward to error handler

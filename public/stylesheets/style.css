@@ -1,3 +1,7 @@
+a:hover {
+    text-decoration: none;
+}
+
 @font-face {
     font-family: 'Jaapokki';
     src: url('../fonts/Regular/jaapokki-regular.eot');
@@ -40,6 +44,18 @@
     opacity: 0;
 }
 
+.share {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: black;
+}
+
+.share a {
+    color: black;
+    margin: 0 10px;
+}
+
 .vcenter {
     height: 100%;
     display: flex;
@@ -57,7 +73,7 @@
 }
 
 .story-sub {
-    padding-top: 100px;
+    padding-top: 150px;
     text-align: left;
     color: black;
 }
@@ -65,17 +81,29 @@
 .story-heading {
     font-size: 56px;
     line-height: 56px;
+    color: black;
 }
 
 .story-byline {
-    font-size: 20px;
-    padding: 15px 0;
-    color: rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    padding: 45px 0;
+}
+
+.down-button {
+    margin-top: 70px;
+    color: black;
+    cursor: pointer;
+}
+
+.up-button {
+    margin: 70px 0 60px 0;
+    cursor: pointer;
 }
 
 .story-subheading {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 22px;
+    padding-top: 10px;
     display: inline-block;
 }
 
@@ -92,7 +120,7 @@
 .top-byline {
     font-size: 18px;
     padding: 15px 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Georgia', serif;
 }
 
 .top-subheading {
@@ -109,6 +137,12 @@
     padding-left: 25px;
     padding-bottom: 25px;
     padding-right: 25px;
+}
+
+.empty-top-container {
+    height: 100%;
+    font-family: 'Georgia', serif;
+    background-color: black;
 }
 
 .top-container {
@@ -129,6 +163,32 @@ p {
     padding-bottom: 25px;
 }
 
+.section-header {
+    font-family: 'Georgia', serif;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 52px;
+    padding: 25px 0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 15px;
+    border-bottom: solid black 10px;
+}
+
+.pull-quote {
+    font-family: 'Georgia', serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    padding: 25px 0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    border-top: solid black 10px;
+    border-bottom: solid black 10px;
+    float: left;
+}
+
 .full-height {
     height: 100%;
 }
@@ -147,6 +207,10 @@ p:first-child:first-letter {
     padding-left: 3px;
 }
 
+p:last-child {
+    padding-bottom: 0;
+}
+
 .article-container {}
 
 .headline {
@@ -157,6 +221,14 @@ p:first-child:first-letter {
 
 .top-photo-container {
     padding-top: 55px;
+}
+
+.empty-top-meta-container {
+    margin-top: 240px;
+    text-align: center;
+    color: white;
+    border-top: solid white 15px;
+    border-bottom: solid white 15px;
 }
 
 .top-meta-container {
@@ -194,11 +266,12 @@ p:first-child:first-letter {
     display: block;
 }
 
-.image-caption {
+.photo-caption {
     font-family: 'Georgia';
-    font-size: 72px;
-    line-height: 74px;
-    display: block;
+    text-align: left;
+    color: #333;
+    font-size: 14px;
+    line-height: 16px;
     width: 100%;
 }
 
@@ -250,18 +323,21 @@ p:first-child:first-letter {
     }
     .top-heading {
         padding: 0;
-        font-size: 36px;
-        line-height: 40px;
+        font-size: 48px;
+        line-height: 55px;
     }
     .top-byline {
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 22px;
+        line-height: 26px;
     }
     .top-photo-container {
         padding: 25px;
     }
     .secondary-promo img {
         height: 25px;
+    }
+    .pull-quote {
+        margin-left: auto;
     }
 }
 
@@ -305,6 +381,9 @@ p:first-child:first-letter {
     }
     .top-photo-container {
         padding: 75px 115px 15px 115px;
+    }
+    .pull-quote {
+        margin-left: auto;
     }
 }
 
