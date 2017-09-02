@@ -313,6 +313,12 @@
     .swiper-slide {
         background-color: white;
     }
+    
+    .footnote {
+        font-size: 14px;
+        color: gray;
+        padding: 45px 0;
+    }
     /* media queries */
     
     @media (min-width: 288px) and (max-width: 475px) {
