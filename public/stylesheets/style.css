@@ -57,6 +57,11 @@
         margin: 0 10px;
     }
     
+    .navbar-image {
+        height: 34px;
+        margin-right: -5px;
+    }
+    
     .vcenter {
         height: 100%;
         display: flex;
