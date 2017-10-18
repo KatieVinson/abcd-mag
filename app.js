@@ -38,7 +38,7 @@ app.use('/an-honor-retrospective', function(req, res) {
 app.use('/the-american-cousin', function(req, res) {
     res.render('cousin');
 })
-app.use('/a-conversation-with-dean-groves', function(req, res) {
+app.use('/dean-groves-commitment', function(req, res) {
     res.render('groves');
 });
 app.use('/npm', express.static(path.join(__dirname, 'node_modules')));
