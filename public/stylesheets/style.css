@@ -2,10 +2,6 @@
         text-decoration: none;
     }
     
-    body {
-        overflow-x: hidden;
-    }
-    
     @font-face {
         font-family: 'Jaapokki';
         src: url('../fonts/Regular/web/jaapokki-regular.eot');
@@ -109,17 +105,6 @@
         padding: 45px 0;
     }
     
-    .down-button {
-        margin-top: 70px;
-        color: black;
-        cursor: pointer;
-    }
-    
-    .up-button {
-        margin: 70px 0 60px 0;
-        cursor: pointer;
-    }
-    
     .story-subheading {
         font-size: 20px;
         line-height: 22px;
@@ -169,7 +154,7 @@
         height: 100%;
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: right;
+        background-position: center;
         color: white;
         font-family: 'Georgia', serif;
     }
@@ -225,12 +210,12 @@
         font-weight: 400;
         font-size: 36px;
         line-height: 42px;
-        padding: 45px 0;
+        padding: 25px 5px;
         margin-top: 85px;
         margin-bottom: 25px;
         border-top: solid black 10px;
         border-bottom: solid black 10px;
-        float: left;
+        text-align: left;
     }
     
     .full-height {
@@ -382,9 +367,9 @@
             font-size: 14px;
         }
         .top-subheading {
-            padding-top: 35px;
-            font-size: 16px;
-            line-height: 22px;
+            padding-top: 15px;
+            font-size: 22px;
+            line-height: 26px;
         }
         .top-heading {
             padding: 0;
@@ -392,11 +377,14 @@
             line-height: 62px;
         }
         .top-byline {
-            font-size: 14px;
-            line-height: 16px;
+            font-size: 18px;
+            line-height: 22px;
         }
         .top-photo-container {
             padding: 25px;
+        }
+        .high-mobile {
+            padding-top: 100px;
         }
         .secondary-promo {
             height: 35px;
@@ -409,7 +397,7 @@
         .share {
             left: 0;
             top: 5px;
-            font-size: 28px;
+            font-size: 22px;
         }
         .photo-caption {
             font-size: 12px;
@@ -419,13 +407,6 @@
         }
         .pull-quote {
             margin-left: auto;
-        }
-        .up-button {
-            margin: 15px 0;
-            text-align: right;
-        }
-        .down-button {
-            margin-top: 40px;
         }
     }
     
@@ -485,10 +466,6 @@
         .pull-quote {
             margin-left: auto;
         }
-        .up-button {
-            text-align: right;
-            margin: 15px 0;
-        }
         .honor-heading {
             padding-top: 15px;
             font-size: 68px;
@@ -505,9 +482,6 @@
             border-top: solid white 15px;
             border-bottom: solid white 15px;
             padding: 25px 0;
-        }
-        .down-button {
-            margin-top: 5px;
         }
     }
     /*svg styling */
