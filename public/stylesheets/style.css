@@ -2,6 +2,10 @@
         text-decoration: none;
     }
     
+    body {
+        overflow-x: hidden;
+    }
+    
     @font-face {
         font-family: 'Jaapokki';
         src: url('../fonts/Regular/web/jaapokki-regular.eot');
@@ -75,7 +79,8 @@
     }
     
     .story {
-        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
     }
     
     .story-sub {
@@ -88,6 +93,15 @@
         font-size: 56px;
         line-height: 56px;
         color: black;
+        margin-top: 15px;
+    }
+    
+    .issue-date {
+        width: auto;
+        font-size: 14px;
+        padding: 4px;
+        color: white;
+        background-color: #ddd;
     }
     
     .story-byline {
@@ -153,12 +167,23 @@
     
     .top-container {
         height: 100%;
-        font-family: 'Georgia', serif;
-        background-image: url("http://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-646270468086/chrisback.jpg");
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: right;
         color: white;
+        font-family: 'Georgia', serif;
+    }
+    
+    #grovesPhoto {
+        background-image: url("http://d12b8ry2hpzpk0.cloudfront.net/groves_graduation.jpg");
+    }
+    
+    #cousinphoto {
+        background-image: url("http://d12b8ry2hpzpk0.cloudfront.net/green_background.jpg");
+    }
+    
+    #diamondPhoto {
+        background-image: url("http://d12b8ry2hpzpk0.cloudfront.net/chrisback.jpg")
     }
     
     p {
@@ -190,6 +215,19 @@
         margin-top: 25px;
         margin-bottom: 25px;
         margin-left: 15px;
+        border-top: solid black 10px;
+        border-bottom: solid black 10px;
+        float: left;
+    }
+    
+    .quick-quote {
+        font-family: 'Georgia', serif;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+        padding: 45px 0;
+        margin-top: 85px;
+        margin-bottom: 25px;
         border-top: solid black 10px;
         border-bottom: solid black 10px;
         float: left;
@@ -240,7 +278,6 @@
     .top-meta-container {
         padding-top: 280px;
         text-align: center;
-        color: white;
     }
     
     .top-photo {

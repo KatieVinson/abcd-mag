@@ -29,12 +29,18 @@ app.use(sassMiddleware({
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/rabbit', function(req, res) {
+app.use('/a-tent-on-the-rivanna', function(req, res) {
     res.render('diamond');
-});
-app.use('/honor', function(req, res) {
+})
+app.use('/an-honor-retrospective', function(req, res) {
     res.render('honor');
 })
+app.use('/the-american-cousin', function(req, res) {
+    res.render('cousin');
+})
+app.use('/a-conversation-with-dean-groves', function(req, res) {
+    res.render('groves');
+});
 app.use('/npm', express.static(path.join(__dirname, 'node_modules')));
 app.use('/fonts', express.static(path.join(__dirname, 'fonts')));
 // catch 404 and forward to error handler
