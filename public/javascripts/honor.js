@@ -15,7 +15,7 @@ $(function() {
                 showPromo = !showPromo;
                 $(".secondary-promo").animate({
                     opacity: 0,
-                }, 1000)
+                }, 100)
             }
         }
     });
