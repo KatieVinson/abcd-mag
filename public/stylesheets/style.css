@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Jaapokki';
+    src: url('../fonts/Regular/web/jaapokki-regular.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .promo-image {
     width: 85%;
     height: 85%;
@@ -61,7 +68,7 @@ svg {
 .d,
 .e {
     font-size: 53.83px;
-    font-family: Jaapokki-Regular, Jaapokki;
+    font-family: 'Jaapokki';
 }
 
 .a,
