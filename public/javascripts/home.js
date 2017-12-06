@@ -1,4 +1,5 @@
 $(function() {
+    console.log("yes");
     var showPromo = false;
     if (!showPromo) {
         showPromo = true;

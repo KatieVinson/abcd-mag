@@ -32,6 +32,12 @@ app.use('/', index);
 app.use('/a-tent-on-the-rivanna', function(req, res) {
     res.render('diamond');
 })
+app.use('/a-charlottesville-couple-revisited', function(req, res) {
+    res.render('diamond2');
+})
+app.use('/new-jersey-first-lady', function(req, res) {
+    res.render('murphy');
+})
 app.use('/an-honor-retrospective', function(req, res) {
     res.render('honor');
 })
