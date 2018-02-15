@@ -32,6 +32,12 @@ app.use('/', index);
 app.use('/a-tent-on-the-rivanna', function(req, res) {
     res.render('diamond');
 })
+app.use('/a-charlottesville-couple-revisited', function(req, res) {
+    res.render('diamond2');
+})
+app.use('/new-jersey-first-lady', function(req, res) {
+    res.render('murphy');
+})
 app.use('/an-honor-retrospective', function(req, res) {
     res.render('honor');
 })
@@ -40,6 +46,12 @@ app.use('/the-american-cousin', function(req, res) {
 })
 app.use('/dean-groves-commitment', function(req, res) {
     res.render('groves');
+});
+app.use('/walking-past-carrs-hill', function(req, res) {
+    res.render('casteen');
+});
+app.use('/scenes-of-dominica', function(req, res) {
+    res.render('dominica');
 });
 app.use('/npm', express.static(path.join(__dirname, 'node_modules')));
 app.use('/fonts', express.static(path.join(__dirname, 'fonts')));
