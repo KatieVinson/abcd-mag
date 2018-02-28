@@ -56,9 +56,9 @@ app.use('/scenes-of-dominica', function(req, res) {
 app.use('/city-of-stories', function(req, res) {
     res.render('bookstore');
 });
-// app.use('/sampson-v-bennett', function(req, res) {
-//     res.render('sampson');
-// });
+app.use('/sampson-versus-bennett', function(req, res) {
+    res.render('sampson');
+});
 app.use('/reemerging-from-rehab', function(req, res) {
     res.render('rugby');
 });
