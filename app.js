@@ -53,9 +53,9 @@ app.use('/walking-past-carrs-hill', function(req, res) {
 app.use('/scenes-of-dominica', function(req, res) {
     res.render('dominica');
 });
-// app.use('/bookstore', function(req, res) {
-//     res.render('bookstore');
-// });
+app.use('/city-of-stories', function(req, res) {
+    res.render('bookstore');
+});
 // app.use('/sampson-v-bennett', function(req, res) {
 //     res.render('sampson');
 // });
