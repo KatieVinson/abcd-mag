@@ -53,8 +53,14 @@ app.use('/walking-past-carrs-hill', function(req, res) {
 app.use('/scenes-of-dominica', function(req, res) {
     res.render('dominica');
 });
-app.use('/bookstore', function(req, res) {
-    res.render('bookstore');
+// app.use('/bookstore', function(req, res) {
+//     res.render('bookstore');
+// });
+// app.use('/sampson-v-bennett', function(req, res) {
+//     res.render('sampson');
+// });
+app.use('/rugby-road', function(req, res) {
+    res.render('rugby');
 });
 app.use('/npm', express.static(path.join(__dirname, 'node_modules')));
 app.use('/fonts', express.static(path.join(__dirname, 'fonts')));
