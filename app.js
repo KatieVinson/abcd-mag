@@ -59,7 +59,7 @@ app.use('/scenes-of-dominica', function(req, res) {
 // app.use('/sampson-v-bennett', function(req, res) {
 //     res.render('sampson');
 // });
-app.use('/rugby-road', function(req, res) {
+app.use('/reemerging-from-rehab', function(req, res) {
     res.render('rugby');
 });
 app.use('/npm', express.static(path.join(__dirname, 'node_modules')));
