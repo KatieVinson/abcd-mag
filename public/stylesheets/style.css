@@ -158,6 +158,10 @@
         color: white;
         font-family: 'Georgia', serif;
     }
+
+    #rugbygraphic1 {
+        background-image: url("http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/february18/rugby.png");
+    }
     
     #grovesPhoto {
         background-image: url("http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/groves_graduation.jpg");
@@ -188,6 +192,10 @@
         background-position: left;
         background-size: 50%;
         border-bottom: solid black 10px;
+    }
+
+    #sampsonPhoto {
+        background-image: url("http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/february18/SampsonHeader.jpeg")
     }
     
     p {
@@ -663,3 +671,7 @@
     .q {
         letter-spacing: 0.07em;
     }
+
+    /* bookstore article */
+
+    
