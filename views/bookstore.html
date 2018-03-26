@@ -1,0 +1,638 @@
+<html>
+<title>abcd Magazine</title>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script src="npm/velocity-animate/velocity.js" type="text/javascript"></script>
+    <script src="javascripts/diamond.js" type="text/javascript"></script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-105772369-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <style>
+        /* Ensure elements are hidden while ScrollEntrance is loading */
+
+        [data-entrance] {
+            visibility: hidden;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/bookstore.css">
+    <link rel="shortcut icon" href="http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/icon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width" />
+    <meta content="City of stories" property="og:title">
+    <meta content="The bookstores of Charlottesville and their untold histories" property="og:description">
+    <meta content="http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/february18/BookstorePhoto1.jpg" property="og:image">
+    <meta content="summary_large_image" name="twitter:card">
+    <meta content="City of stories" name="twitter:title">
+    <meta content="The bookstores of Charlottesville and their untold histories" ame="twitter:description ">
+    <meta content="http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/february18/BookstorePhoto1.jpg" name="twitter:image:src ">
+</head>
+
+<body>
+    <div class="secondary-promo">
+        <div class="share">
+            <a href="http://www.cavalierdaily.com">
+                <img class="navbar-image" src="http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/CD_Circle.png">
+            </a>
+            <a href="https://twitter.com/share?url=http://www.abcdmag.com/city-of-stories&text=Bookstores of Charlottesville and their untold histories."
+                target="_blank">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.facebook.com/dialog/share?app_id=115484705817318&display=popup&href=http://www.abcdmag.com/city-of-stories"
+                target="_blank">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+        </div>
+        <a href="/">
+            <img src="http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/abcd.png ">
+        </a>
+    </div>
+    <div class="video-container" style="position: relative;">
+        <video autoplay loop muted id="myVideo" style="height: auto;
+        vertical-align: middle;
+        width: 100%;">
+            <source src="http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/february18/NewDominion2.mp4" type="video/mp4"> Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="container-fluid ">
+        <div class="row">
+            <div class=" col-xs-offset-1">
+                <div class="bookstore-header">
+                    City of Stories
+                </div>
+                <div class="bookstore-sub" style="padding-top:10px">
+                    The bookstores of Charlottesville and their untold histories
+                </div>
+                <div class="bookstore-byline" style="padding-top:20px">
+                    Words by Dan Goff | Photos by Chandler Collins
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class=" col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-5 body-text ">
+                <p>
+                    What is Charlottesville known for?
+                </p>
+                <p>
+                    Ask anyone who doesn't live in the city, or at least who doesn't live in Virginia, and they'll probably respond, "It's the
+                    place where those white nationalist rallies happened."
+                </p>
+                <p>
+                    Ask a student of the University or a resident of Charlottesville, and the answers will get a little more specific and varied
+                    — maybe something about the University sports teams, or something about the Dave Matthews Band. Tina
+                    Fey might be mentioned.
+                </p>
+                <p>
+                    But these facts fail to represent the community. Charlottesville's history is rich, but too often overlooked. And at the
+                    center of this neglected history are five independent bookstores, doing their best to survive by selling
+                    stories while their own stories remain untold.
+                </p>
+                <p>
+                    It's time to tell these stories.
+                </p>
+            </div>
+        </div>
+        <div class="top-container row clearfix" style="position: relative;
+            background-image: url(http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/february18/BookstorePhoto1.jpg)">
+            <span style="position: absolute; padding-bottom:5px; padding-left:10px;
+            bottom: 0;" class="bookstore-sub">New Dominion&rsquo;s new directions</span>
+        </div>
+        <div class="row ">
+            <div class=" col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-5 body-text ">
+                <p>
+                    When Julia Kudravetz bought New Dominion Bookshop in October 2017, she knew she was purchasing one of the most iconic pieces
+                    of property on the Downtown Mall. It's a responsibility she's not taking lightly.
+                </p>
+                <p>
+                    "I want for us to be a bookstore which is looking outwards and looking towards the future," Kudravetz said.
+                </p>
+                <p>
+                    Kudravetz prefaced this by describing the bookstore's past, a history so vibrant and unusual that it, as Kudravetz suggested,
+                    "sounds like something out of Hemingway."
+                </p>
+                <p>
+                    "It's the oldest independent bookshop in Virginia — one of the oldest in the country," Kudravetz said. "The earliest record
+                    we can find is from 1924."
+                </p>
+                <p>
+                    The first owner she mentioned was Christopher Columbus Wells, a "World War I ambulance driver, who moved back to Charlottesville
+                    to start this place."
+                </p>
+                <p>
+                    New Dominion's original location was where the Mall's CVS currently is, Kudravetz said — the city's ultimate social destination.
+                </p>
+                <p>
+                    "From the stories people tell, it was the center of Charlottesville," Kudravetz said. "People would stroll through for books,
+                    but also gossip and conversation."
+                </p>
+                <p>
+                    This original building housed New Dominion for decades. It wasn't until the late 1980s that it moved to its current location,
+                    which, as Kudravetz explained, "used to be an old shoe store."
+                </p>
+                <p>
+                    It's hard to believe that anything as mundane as footwear was ever sold in such a beautiful space. With its sweeping staircases,
+                    frosted glass skylights and, most importantly, towering bookcases built into the walls, it seems like
+                    a building that has always — and will always — house literature.
+                </p>
+                <p>
+                    Carol Troxell, the owner of New Dominion until her sudden death in January of last year, was responsible for this move when
+                    she took over the shop. She and her husband Robert bought and renovated the building to bring it to its
+                    current form, Kudravetz said.
+                </p>
+                <p>
+                    Then, Kudravetz jumped to the part of history that included her.
+                </p>
+                <p>
+                    "I had been working here — moonlighting, doing social media and also selling books for New Dominion at a reading series that
+                    I founded," Kudravetz said.
+                </p>
+                <p>
+                    She was also teaching community college at the time of Troxell's passing, but she said the prospect of owning a bookstore
+                    — not to mention, a cultural landmark — was much more appealing.
+                </p>
+                <p>
+                    "I wrote to her husband and said, 'I love the shop and I would be in a position to buy it — would you hire me as a manager?'"
+                    Kudravetz said. "He didn't know what he was going to do with it … so he hired me."
+                </p>
+                <p>
+                    Kudravetz officially bought the store at the end of October, bringing it to its current state.
+                </p>
+                <p>
+                    And what state is that? Kudravetz seemed to have mixed feelings about what should be preserved and what must be updated,
+                    to preserve — and persevere — in a larger sense.
+                </p>
+                <p>
+                    "I think with anything that's been around 100 years, there's some real quirks," Kudravetz said.
+                </p>
+                <p>
+                    She explained one such quirk that she had already rectified — the absence of cordless phones in the store.
+                </p>
+                <p>
+                    "There are some things that of course I want to change," Kudravetz said. "But then there are some things that are really
+                    part of the texture of the shop, which I love."
+                </p>
+                <p>
+                    She had a lot to say about the shop's future, so many plans and upcoming events that visibly excited her.
+                </p>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-md-8 col-md-offset-2 ">
+                <img class="inline-photo" src="http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/february18/BookstorePhoto2.jpg" style="width: 100%">
+                <div class="inline-photo-caption">
+                    Julia Kudravetz stands outside her store, New Dominion Bookshop, on Charlottesville's Downtown Mall.
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class=" col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-5 body-text ">
+                <p>
+                    "We've got 13 events during the Book Festival — that's a lot for our little shop," Kudravetz said, grinning, name-dropping
+                    considerable authors such as Nathan Englander.
+                </p>
+                <p>
+                    On a smaller, more immediate scale, Kudravetz said she is working every day to make New Dominion a more accessible and attractive
+                    location for residents of Charlottesville.
+                </p>
+                <p>
+                    "People are not going to just discover us on their own," Kudravetz said. "We need someone to be reaching out to new communities
+                    in Charlottesville."
+                </p>
+                <p>
+                    Despite her ambitious outlook and palpable happiness, Kudravetz acknowledged the struggles that independent bookstore owners
+                    face. She agreed that Charlottesville's small business community, particularly in the context of literature,
+                    was "strangely thriving," and said later in the interview that New Dominion survives "on sheer force
+                    of will."
+                </p>
+                <p>
+                    But Kudravetz also said that she's found the "secret of surviving," or at least one of them — namely, being attuned to customers'
+                    needs, desires and interests.
+                </p>
+                <p>
+                    "What I love about here is that you know a lot of the customers," Kudravetz said. "You get to know them over time, and if
+                    you're good, you remember the books they bought in the past ... I think that's the tradition of really
+                    knowing the customers. I think that's the secret of surviving."
+                </p>
+                <p>
+                    This ties in nicely to Kudravetz's plans for the store's future. "I want us to be a bookshop for all of Charlottesville …
+                    for students, for seniors," she said.
+                </p>
+                <p>
+                    Kudravetz seems unsure whether New Dominion will thrive or merely survive in the years to come, but her interview made it
+                    clear that she is doing everything in her power to achieve the former. If her goals come to fruition,
+                    the shop will be a modern reincarnation of its former self — a bookstore that is both a reflection of,
+                    and a destination for, its community.
+                </p>
+            </div>
+        </div>
+
+        <div class="top-container row clearfix" style="position: relative;
+        background-image: url(http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/february18/BookstorePhoto3.jpg)">
+            <span style="position: absolute; padding-bottom:0px; padding-left:10px;
+        bottom: 0;" class="bookstore-sub">The beginning of a beautiful ownership</span>
+        </div>
+
+
+        <div class="row ">
+            <div class=" col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-5 body-text ">
+                <p>
+                    New Dominion isn't the only shop on the Downtown Mall recently under new management. Read It Again, Sam, located on the same
+                    side of the Mall and a few blocks closer to its center, was subjected to similar tragedies and significant
+                    events in 2017.
+                </p>
+                <p>
+                    It might be a shock to learn that Dennis Kocik has only owned and managed the store since last December — he speaks of Read
+                    It Again, Sam and moves through the space as though it has been his focus for many years. Any old-time
+                    customers, however, know that Kocik is filling a suddenly and tragically vacated void.
+                </p>
+                <p>
+                    "Read It Again, Sam was started by Dave Taylor 30 years ago," Kocik said. "Ten years of it was in Lovingston, where they
+                    lived, 20 years right here."
+                </p>
+                <p>
+                    The "right here" refers to another beautiful building — not quite so grandiose as New Dominion, but remarkable in a quieter
+                    way. Marble floors and polished wood paneling abound in the store, remnants of the jewelry shop that
+                    once occupied the space that lend a refined but unpretentious mood.
+                </p>
+                <p>
+                    The store is made even more unassuming by the endless figurines, posters and assorted movie memorabilia, all of it starring
+                    and celebrating Humphrey Bogart.
+                </p>
+                <p>
+                    "[Taylor] liked the movie 'Casablanca' … apparently he was a big Bogart fan," Kocik said with an understated smirk.
+                </p>
+                <p>
+                    The name of the store itself — done in gold lettering on the front windows, along with a sketch of Bogart's face — is a play
+                    on a classic, though oft-misquoted line from "Casablanca."
+                </p>
+                <p>
+                    If Read It Again, Sam, is in some ways a shrine dedicated to Bogart, it has recently updated its decor to celebrate the late
+                    Taylor. Near the front of the store is a black book nearly full of condolences from long-time customers,
+                    and next to that is Taylor's laminated obituary. A quick flip through this book gives an idea of the
+                    impact Taylor had on the community.
+                    <em>Dave was a good fellow. Part of the fabric of downtown. Many years — many books.</em>
+                </p>
+                <p>
+                    Kocik's recent acquisition of the store is still very much on his mind, as evidenced by the amount of time he spent talking
+                    about it.
+                </p>
+                <p>
+                    "When I found out Dave had died March of last year, I remember telling Barbara, the manager ... if she was looking to sell,
+                    I'd be interested," Kocik said.
+                </p>
+                <p>
+                    Though Kocik has no previous experience running a bookstore, he's familiar with the sellers of Charlottesville.
+                </p>
+                <p>
+                    "I've never owned a bookstore, but I've been buying books here 20 years myself," he said. "I bought books from all of [the
+                    bookstores on the Mall], including those that are no longer here."
+                </p>
+                <p>
+                    When asked about the competition of other bookstores on the Mall, Kocik claimed that it was nonexistent.
+                </p>
+                <p>
+                    "I don't even look at it as a competition," he said, though he did admit that "it's unusual for this small area to have that
+                    many bookstores."
+                </p>
+                <p>
+                    To this phenomenon, he attributed the "bookstore experience" as the main reason.
+                </p>
+                <p>
+                    "Buying from Amazon is one thing because you're buying something that you can't touch and feel," he said. "You just pray
+                    that it'll come in good condition. Here, you can browse, and you actually wind up seeing a book that
+                    you weren't looking for."
+                </p>
+                <p>
+                    Kocik stressed that "you don't get that from a Kindle," becoming visibly more passionate as he continued to discuss the physical
+                    element of books and bookstores.
+                </p>
+                <p>
+                    "There's something personal," he said. "You get up-close with a book."
+                </p>
+                <p>
+                    During the interview, customers filtered in and out of the store, sometimes buying books, sometimes just saying hi to Kocik.
+                    A few of them referred to him by name, a testament to the impact Kocik has already made on the community
+                    in just a few months.
+                </p>
+                <p>
+                    "I always quote the ancient Roman Cicero," Kocik said. "'A room without books is like a body without a soul.' We have soul.
+                    We have a lot of soul."
+                </p>
+            </div>
+        </div>
+
+        <div class="top-container row clearfix " style="position: relative;
+        background-image: url(http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/february18/BookstorePhoto4.jpg)">
+            <span style="position: absolute; padding-bottom:5px; padding-left:10px;
+        bottom: 0;" class="bookstore-sub">Repurposing the book</span>
+        </div>
+
+        <div class="row ">
+            <div class=" col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-5 body-text ">
+                <p>
+                    To call Blue Whale Books a bookstore might be a misnomer. To be sure, the shop is filled with bookshelves packed to the brim
+                    — ancient, dusty tomes under glass, a few stacks on the front desk. But owner Scott Fennessey has a novel
+                    business plan to diversify the store's products.
+                </p>
+                <p>
+                    "We've started selling prints and maps," Fennessey said. "People find [them] fascinating. I think part of it is an increase
+                    of interest in visual materials. A lot of people have lost interest in older books, just as objects —
+                    whereas, for some reason, the picture out of a book is more fascinating."
+                </p>
+                <p>
+                    Fennessey's shop has changed its wares to reflect this interest. A good part of the store is devoted to prints — idyllic
+                    scenes cut out of illustrated novels, anatomical diagrams from reference books, sprawling, full-color
+                    maps taken from atlases.
+                </p>
+                <p>
+                    Fennessey used one of his more picturesque prints to explain how he had gotten the idea.
+                </p>
+                <p>
+                    "This is a printout from a book that I've had on the shelf for literally 20 years and just couldn't sell, because you look
+                    at it and the title is in Czech," he said.
+                </p>
+                <p>
+                    He continued that, despite the "15 color linocuts" within the book, it had no chance of selling.
+                </p>
+                <p>
+                    "I was gonna put it on the dollar shelf, just out of disgust," Fennessey said. "But I was looking at it and I thought, 'I'm
+                    just gonna try to sell the linocuts.' And as I was packaging these plates, I sold two of them — for more
+                    than the book cost."
+                </p>
+                <p>
+                    Fennessey attributed what he calls the "antiquey factor" to the success of the print business.
+                </p>
+                <p>
+                    "For people under the age of 35, they want something 'antiquey,'" he said. "They want the experience of something old, but
+                    they don't want the whole book."
+                </p>
+                <p>
+                    There's a peak price for this factor, he added — "under 50 dollars." But just out of fascination, people may spend "10, 20,
+                    30 bucks" on a print.
+                </p>
+                <p>
+                    Aside from the artistic novelty, Fennessey has another incentive to get customers in the store — a furry, friendly incentive
+                    that waddled in and out of sight throughout the entire interview.
+                </p>
+                <p>
+                    "Gizmo is 10," Fennessey said, laughing as he hoisted his dog into his lap to pose for photos.
+                    <br> "She's a really sweet dog. She likes kids. She's good at bringing in customers — she'll just sit right
+                    in the door, and people come in because of that."
+                </p>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-md-8 col-md-offset-2 ">
+                <img class="inline-photo" src="http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/february18/BookstorePhoto5.jpg" style="width: 100%">
+                <div class="inline-photo-caption">
+                    Scott Fennessey talks about his store, Blue Whale Books, while with his corgi, Gizmo.
+                </div>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class=" col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-5 body-text ">
+                <p>
+                    Fennessey seemed sublimely unconcerned as he held the compliant corgi, telling an anecdote about Gizmo's encounter with a
+                    baby rabbit. Missing from Blue Whale was the air of uncertainty, though faint, that permeated every other
+                    bookstore featured in this article.
+                </p>
+                <p>
+                    "We're all sort of fleeing the book market," Fennessey said at one point. "You gotta make a living."
+                </p>
+                <p>
+                    Fennessey's methods shouldn't necessarily be called a flight from bookselling, but they are a clever — and potentially long-lasting
+                    — repurposing of the book.
+                </p>
+            </div>
+        </div>
+
+        <div class="top-container row clearfix " style="position: relative;
+            background-image: url(http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/february18/BookstorePhoto6.png)">
+            <span style="position: absolute; padding-bottom:5px; padding-left:10px;
+            bottom: 0;" class="bookstore-sub">The relic of Elliewood</span>
+        </div>
+
+        <div class="row ">
+            <div class=" col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-5 body-text ">
+                <p>
+                    "In 10 years, I think there will be one bookstore left on the Downtown Mall."
+                </p>
+                <p>
+                    Strange, perhaps startling words to hear from an independent bookstore owner, but Paul Collinge has been in the business
+                    long enough to make a few radical predictions.
+                </p>
+                <p>
+                    Heartwood Books has existed on Elliewood Avenue since 1975, seeing the rise and fall of generations of independent businesses.
+                </p>
+                <p>
+                    "Various independent bookstores existed around the University, until this day," Collinge said. "I'm the last one. All the
+                    rest of them have gone out of business."
+                </p>
+                <p>
+                    The bookstore shows its age, too — if only through the impressive accumulation of products. Books of all shapes and sizes
+                    are stacked, piled or otherwise arranged throughout the tightly packed space.
+                </p>
+                <p>
+                    Collinge set up a folding chair amid the literary maze and reminisced on Heartwood's origins.
+                </p>
+                <p>
+                    He attributed the store's initial success to the "presence of the University," but added that this became less and less helpful
+                    with each technological advance.
+                </p>
+                <p>
+                    "Suddenly, everyone at the University had high-speed internet, they could order things from Amazon, and we saw a huge shift,"
+                    Collinge said. "In 2018, we're doing about a third of the business we did in 2000."
+                </p>
+                <p>
+                    A significant part of the interview was devoted to Collinge describing the more profitable days of the shop. He pointed out
+                    an ad from 1975 featuring over 20 various shops on Elliewood Avenue — Heartwood among them. According
+                    to Collinge, his bookstore is the only one that has survived in its original form those four decades.
+                </p>
+                <p>
+                    Collinge summed up his grievances with the simple, though alarming concept that "a lot of people don't read books anymore."
+                </p>
+                <p>
+                    "It's an educational problem, I think," Collinge said. "And it needs to be addressed."
+                </p>
+                <p>
+                    A shop like Heartwood Books may be just the solution needed, with its teetering monuments of knowledge in the forms of stacked
+                    paperbacks — knowledge waiting to be discovered. And students can still discover it — Collinge implores
+                    them to. All that is required is a short walk from the Corner and a little curiosity.
+                </p>
+            </div>
+        </div>
+
+        <div class="top-container row clearfix" style="position: relative;
+            background-image: url(http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/february18/BookstorePhoto7.jpg)">
+            <span style="position: absolute; padding-bottom:5px; padding-left:10px;
+            bottom: 0;" class="bookstore-sub">A living legend and his labyrinth</span>
+        </div>
+
+        <div class="row ">
+            <div class=" col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-5 body-text ">
+                <p>
+                    Tucked into one of the crevices of the Downtown Mall, Daedalus Bookshop is easy to miss — but essential to experience. Its
+                    modest storefront isn't the most promising, lacking the gold-embossed banners of New Dominion or the
+                    elegant marble of Read It Again, Sam, but just a glance inside reveals an enchanting labyrinth of literature.
+                </p>
+                <p>
+                    Think Heartwood, but exponentially larger and more intricate. Three rickety, claustrophobic floors of novels and nonfiction
+                    boast every subject imaginable. And sitting in the store's center floor, at the nucleus of his creation
+                    and accumulation, is one Sandy McAdams.
+                </p>
+                <p>
+                    An undeniable fixture of the community, McAdams is just as eclectic and full of life as his sprawling bookstore. This liveliness
+                    is somewhat kept in check by an advanced age and steadily advancing multiple sclerosis, the combination
+                    of which have confined McAdams to a motorized wheelchair, but he is still a sight to behold.
+                </p>
+                <p>
+                    And he had so much to say.
+                </p>
+                <p>
+                    "Right away, I thought, Charlottesville would have a brass band and parade for this great used bookshop," McAdams said, chuckling.
+                    "But it's gone unnoticed. It's still unnoticed."
+                </p>
+                <p>
+                    McAdams was describing a time long past — 44 years, by his estimation — but he made the era come alive with lively stories
+                    and facial expressions to match.
+                </p>
+                <p>
+                    The conversation took many unexpected turns. As a result, many questions were left unanswered or only partially so.
+                </p>
+                <p>
+                    For instance, McAdams explained that he started the iconic C&O Restaurant with a man named Phillip Stafford but failed to
+                    go into any further detail.
+                </p>
+                <p>
+                    "When I first moved here, they were digging out the Mall to put the bricks down," McAdams said. "And myself and my partner
+                    — one end was the C&O Restaurant, and I had the other [end of the Mall]."
+                </p>
+                <p>
+                    Daedalus Bookshop is a place rich with history, and though unnoticed by many residents, it has not gone entire unsung — even
+                    on a national scale. At one point, McAdams dug around in one of his stacks of books, eventually pulling
+                    out a brightly colored one called "Footnotes from the World's Greatest Bookstores." Daedalus Bookshop
+                    was one of the featured stores.
+                </p>
+                <p>
+                    According to the book, McAdams "built all the bookshelves, did all the masonry, shelved three floors of books and mapped
+                    the building's contents." This incredible fact prompted McAdams to call himself a "hard worker," a phrase
+                    that was repeated multiple times throughout the interview.
+                </p>
+                <p>
+                    "I don't cook, I don't know anything about wine, but I'm a hard worker." This was in reference to the C&O Restaurant, and
+                    the hand McAdams had in designing it.
+                </p>
+                <p>
+                    "I never did things so much because of talent, but more because I was a hard worker." This was a nod to McAdams's decision
+                    to move to Canada to avoid the war draft, as he feared he would "kill a huge number of ... people" if
+                    he was drafted because of his inherent hard-working traits — just another chapter of the man's incredibly
+                    varied life story.
+                </p>
+                <p>
+                    This hardworking trait of McAdams' was also displayed when he showed off a newspaper that he helped found, print and publish
+                    called "The Times of Charlottesville." Though it only existed for two years, it serves as another testament
+                    to the impressive cultural impact McAdams has had on Charlottesville.
+                </p>
+                <p>
+                    Even to this day, McAdams is a hard worker. Throughout the interview, he was zooming around in his motorized wheelchair —
+                    picking up books seemingly at random from stacks, checking for prices, sometimes marking in them with
+                    a fat pencil. McAdams doesn't let his illness or his age slow him down — he's still constantly in motion.
+                </p>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-md-8 col-md-offset-2 ">
+                <img class="inline-photo" src="http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/february18/BookstorePhoto8.jpg" style="width: 100%">
+                <div class="inline-photo-caption">
+                    Sandy McAdams, owner of Dedalus Bookshop, inscribes a price in one of his books.
+                </div>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class=" col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-5 body-text ">
+                <p>
+                    From speaking to McAdams or just by stepping into his shop, it is clear that he has devoted his life to collecting stories.
+                    Of all the tales he has compiled over the decades, undoubtedly the most interesting is his own. The story
+                    features a rotating cast of characters, some of them just mentioned — his daughter, his "darling wife,"
+                    his business partner Stafford — and some walking into the store by chance.
+                </p>
+                <p>
+                    This latter category was a near-constant interruption to the interview, but provided more insight into McAdams's character
+                    than even the most well-thought-out question could. An "unbelievable mailman who's become a friend" dropped
+                    off some packages, prompting the bookstore owner to question the man about whether or not he's visited
+                    the doctor yet for some unknown ailment.
+                </p>
+                <p>
+                    After their brief interaction, McAdams shouted at the man's retreating figure, "Keep my love around you!"
+                </p>
+                <p>
+                    Another, younger employee also stopped by — someone McAdams referred to just as "John."
+                </p>
+                <p>
+                    "We have a book club," McAdams explained, apparently referring both to an actual club and to his coworkers in the shop. "As
+                    I get weaker and weaker, they said they would take turns working one day of the week."
+                </p>
+                <p>
+                    John was a character himself, encouraging McAdams to tell stories about "sex in the stacks" at Daedalus — "just like in Alderman
+                    Library," he said.
+                </p>
+                <p>
+                    This led McAdams to declare, "I started it!"
+                </p>
+                <p>
+                    The interview never really came to an end. McAdams eventually said to "come in again … [to] talk more." It seemed clear that
+                    the mysterious old man had only relinquished a tiny portion of the illustrious past of the bookstore
+                    and his own impressive story — but what little he did share was incredible.
+                </p>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-md-8 col-md-offset-2 ">
+                <img class="inline-photo" src="http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/february18/BookstorePhoto9.jpg" style="width: 100%">
+                <div class="inline-photo-caption">
+                    Books of poetry line the shelves at Dedalus Bookshop.
+                </div>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class=" col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-5 body-text ">
+                <p>
+                    Considering the wealth of stories, knowledge and genuine passion found in McAdams's character, one can't help but imagine
+                    what similar qualities must have existed in Carol Troxell of New Dominion or Dave Taylor of Read It Again,
+                    Sam. But rather than mourn what lives have been lost, their vibrant impacts on the city of Charlottesville
+                    should instead be appreciated.
+                </p>
+                <p>
+                    Just as authors' legacies are preserved in their writings, so are these bookstore owners immortalized by their lives' work
+                    — brick-and-mortar testaments to the power of the written word, and its ability to bring a community
+                    together.
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
