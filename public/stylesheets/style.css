@@ -197,6 +197,10 @@
     #sampsonPhoto {
         background-image: url("http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/february18/SampsonHeader.jpeg")
     }
+
+    #gaPhoto {
+        background-image: url("http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/April18/RichmondStateHouse.jpg")
+    }
     
     p {
         font-family: 'Garamond', serif;
