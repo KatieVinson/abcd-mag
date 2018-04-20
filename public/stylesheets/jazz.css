@@ -1,0 +1,9 @@
+#jazzPhoto {
+        background-image: url("http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/April18/DEarth2.JPG")
+}
+
+.jazzHeader{
+    z-index: 1;
+    padding-top: 52vh;
+    text-align: center;
+}
