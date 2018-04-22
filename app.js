@@ -53,6 +53,9 @@ app.use('/walking-past-carrs-hill', function(req, res) {
 app.use('/scenes-of-dominica', function(req, res) {
     res.render('dominica');
 });
+app.use('/eugenics', function(req, res) {
+    res.render('eugenics');
+});
 app.use('/npm', express.static(path.join(__dirname, 'node_modules')));
 app.use('/fonts', express.static(path.join(__dirname, 'fonts')));
 // catch 404 and forward to error handler
