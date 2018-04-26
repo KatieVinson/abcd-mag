@@ -134,6 +134,8 @@
         line-height: 28px;
         display: inline-block;
     }
+
+
     
     .story-container {
         font-family: 'Georgia', serif;
@@ -201,6 +203,8 @@
     #gaPhoto {
         background-image: url("http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/April18/RichmondStateHouse.jpg")
     }
+
+
     
     p {
         font-family: 'Garamond', serif;
