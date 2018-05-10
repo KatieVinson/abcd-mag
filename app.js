@@ -77,7 +77,7 @@ app.use('/murals', function(req, res) {
 app.use('/protest-dialogue-confrontation', function(req, res) {
     res.render('statues');
 });
-app.use('/music-venues', function(req, res) {
+app.use('/fostering-the-fringes', function(req, res) {
     res.render('music-venues');
 });
 app.use('/bouncers', function(req, res) {
