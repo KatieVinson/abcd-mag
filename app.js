@@ -68,6 +68,21 @@ app.use('/the-general-assembly-2018', function(req, res) {
 app.use('/jazz', function(req, res) {
     res.render('jazz');
 });
+app.use('/eugenics', function(req, res) {
+    res.render('eugenics');
+});
+app.use('/murals', function(req, res) {
+    res.render('murals');
+});
+app.use('/protest-dialogue-confrontation', function(req, res) {
+    res.render('statues');
+});
+app.use('/music-venues', function(req, res) {
+    res.render('music-venues');
+});
+app.use('/bouncers', function(req, res) {
+    res.render('bouncers');
+});
 app.use('/npm', express.static(path.join(__dirname, 'node_modules')));
 app.use('/fonts', express.static(path.join(__dirname, 'fonts')));
 // catch 404 and forward to error handler
