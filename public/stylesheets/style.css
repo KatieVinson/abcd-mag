@@ -134,6 +134,8 @@
         line-height: 28px;
         display: inline-block;
     }
+
+
     
     .story-container {
         font-family: 'Georgia', serif;
@@ -200,6 +202,18 @@
 
     #gaPhoto {
         background-image: url("http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/April18/RichmondStateHouse.jpg")
+    }
+
+    #eugenicsPhoto {
+        background-image: url("http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/April18/Eugenics4-stacked.png");
+    }
+    
+    #muralsPhoto {
+        background-image: url("http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/April18/MuralsCover.JPG");
+    }
+
+    #statuePhoto {
+        background-image: url("http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/April18/JeffersonStatue.png");
     }
     
     p {
@@ -676,6 +690,6 @@
         letter-spacing: 0.07em;
     }
 
-    /* bookstore article */
-
-    
+    .flexboxitem {
+        align-self: flex-end;
+    }

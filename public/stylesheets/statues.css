@@ -1,0 +1,16 @@
+.body-subheading {
+    font-size: 34px;
+    font-family: 'Garamond', serif;
+    /* padding-top: 80px; */
+    /* padding-bottom: 80px; */
+}
+
+.body-byline {
+    font-size: 18px;
+    font-family: 'Garamond', serif;
+}
+
+.statue-body-text {
+    padding-right: 5px;
+    padding-top: 40px;
+}
