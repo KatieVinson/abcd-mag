@@ -218,8 +218,16 @@ a:hover {
     background-image: url("http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/february18/SampsonHeader.jpeg")
 }
 
+#muralsPhoto {
+    background-image: url("http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/April18/MuralsCover.JPG");
+}
+
+#eugenicsPhoto {
+    background-image: url("http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/April18/JordanHall.jpg");
+}
+
 #statuePhoto {
-    background-image: url("http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/April18/JeffersonStatue.png");
+    background-image: url("http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/April18/statues-cover.png");
 }
 
  #musicVenuesPhoto {
