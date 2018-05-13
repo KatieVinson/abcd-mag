@@ -71,7 +71,7 @@ app.use('/jazz', function(req, res) {
 app.use('/eugenics', function(req, res) {
     res.render('eugenics');
 });
-app.use('/murals', function(req, res) {
+app.use('/the-city-that-wears-its-art-on-its-sleeve', function(req, res) {
     res.render('murals');
 });
 app.use('/protest-dialogue-confrontation', function(req, res) {
@@ -79,9 +79,6 @@ app.use('/protest-dialogue-confrontation', function(req, res) {
 });
 app.use('/fostering-the-fringes', function(req, res) {
     res.render('music-venues');
-});
-app.use('/bouncers', function(req, res) {
-    res.render('bouncers');
 });
 app.use('/npm', express.static(path.join(__dirname, 'node_modules')));
 app.use('/fonts', express.static(path.join(__dirname, 'fonts')));
