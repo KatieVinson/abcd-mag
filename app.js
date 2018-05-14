@@ -65,7 +65,7 @@ app.use('/reemerging-from-rehab', function(req, res) {
 app.use('/the-general-assembly-2018', function(req, res) {
     res.render('ga-transcript');
 });
-app.use('/jazz', function(req, res) {
+app.use('/clarity-in-chaos', function(req, res) {
     res.render('jazz');
 });
 app.use('/eugenics', function(req, res) {
