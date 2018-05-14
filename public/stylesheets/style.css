@@ -278,6 +278,19 @@
         border-bottom: solid black 10px;
         text-align: left;
     }
+
+    .alt-quick-quote {
+        font-family: 'Georgia', serif;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+        padding: 25px 5px;
+        margin-top: 85px;
+        margin-bottom: 25px;
+        border-top: solid black 3px;
+        border-bottom: solid black 3px;
+        text-align: left;
+    }
     
     .full-height {
         height: 100%;
@@ -694,6 +707,12 @@
         letter-spacing: 0.07em;
     }
 
-    .flexboxitem {
+.flexboxitem {
         align-self: flex-end;
-    }
+}
+
+.body-subheading {
+    font-size: 34px;
+    font-family: 'Garamond', serif;
+    padding-top: 80px;
+}

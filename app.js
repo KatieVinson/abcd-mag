@@ -68,7 +68,7 @@ app.use('/the-general-assembly-2018', function(req, res) {
 app.use('/clarity-in-chaos', function(req, res) {
     res.render('jazz');
 });
-app.use('/eugenics', function(req, res) {
+app.use('/eugenics-racist-chains-on-uva', function(req, res) {
     res.render('eugenics');
 });
 app.use('/the-city-that-wears-its-art-on-its-sleeve', function(req, res) {
