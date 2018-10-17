@@ -158,7 +158,69 @@
         color: white;
         font-family: 'Georgia', serif;
     }
-
+    
+    .title-image {
+        width: auto;
+        height: auto;
+        max-height: 100%;
+        max-width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .housing-header-container {
+        text-align: center;
+        color: white;
+        background-color: black;
+        height: 100vh;
+    }
+    
+    .refugee-header-container {
+        background-color: white;
+        color: black;
+        height: 100vh;
+    }
+    
+    .housing-header {
+        text-align: center;
+        font-family: 'Georgia', serif;
+        max-width: 100px;
+        font-size: 20px;
+        line-height: 55px;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+    }
+    
+    .refugee-header {
+        font-family: 'Georgia', serif;
+        max-width: 475px;
+        font-size: 28px;
+        line-height: 42px;
+        display: inline-block;
+        padding-top: 40%;
+    }
+    
+    .housing-byline {
+        text-align: center;
+        width: 200px;
+        position: absolute;
+        bottom: 45px;
+        transform: translateX(-50%);
+        left: 50%;
+        font-family: 'Georgia', serif;
+    }
+    
+    .refugee-byline {
+        padding-top: 70px;
+        height: 145px;
+        font-family: 'Georgia', serif;
+    }
+    
     #rugbygraphic1 {
         background-image: url("http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/february18/rugby.png");
     }
@@ -193,13 +255,29 @@
         background-size: 50%;
         border-bottom: solid black 10px;
     }
-
+    
     #sampsonPhoto {
         background-image: url("http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/february18/SampsonHeader.jpeg")
     }
-
+    
     #gaPhoto {
         background-image: url("http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/April18/RichmondStateHouse.jpg")
+    }
+    
+    #eugenicsPhoto {
+        background-image: url("http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/April18/JordanHall.jpg");
+    }
+    
+    #muralsPhoto {
+        background-image: url("http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/April18/MuralsCover.JPG");
+    }
+    
+    #statuePhoto {
+        background-image: url("http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/April18/statues-cover.png");
+    }
+    
+    #musicVenuesPhoto {
+        background-image: url("http://d2kgzndjy6b5sa.cloudfront.net/abcdmag/April18/MusicVenueHeader2.jpg");
     }
     
     p {
@@ -258,6 +336,19 @@
         margin-bottom: 25px;
         border-top: solid black 10px;
         border-bottom: solid black 10px;
+        text-align: left;
+    }
+    
+    .alt-quick-quote {
+        font-family: 'Georgia', serif;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+        padding: 25px 5px;
+        margin-top: 85px;
+        margin-bottom: 25px;
+        border-top: solid black 3px;
+        border-bottom: solid black 3px;
         text-align: left;
     }
     
@@ -675,7 +766,13 @@
     .q {
         letter-spacing: 0.07em;
     }
-
-    /* bookstore article */
-
     
+    .flexboxitem {
+        align-self: flex-end;
+    }
+    
+    .body-subheading {
+        font-size: 34px;
+        font-family: 'Garamond', serif;
+        padding-top: 80px;
+    }
