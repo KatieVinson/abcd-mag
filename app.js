@@ -80,6 +80,13 @@ app.use('/protest-dialogue-confrontation', function(req, res) {
 app.use('/fostering-the-fringes', function(req, res) {
     res.render('music-venues');
 });
+
+app.use('/redefining-roots', function(req, res) {
+    res.render('refugees')
+});
+app.use('/home-away-from-hospital', function(req, res) {
+    res.render('housing')
+});
 app.use('/npm', express.static(path.join(__dirname, 'node_modules')));
 app.use('/fonts', express.static(path.join(__dirname, 'fonts')));
 // catch 404 and forward to error handler
